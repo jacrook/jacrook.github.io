@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html>
+
   <head>
-      <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-27403992-1"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
 
-    gtag('config', 'UA-27403992-1');
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-27403992-1');
     </script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,6 +23,7 @@
     <script src="https://kit.fontawesome.com/2845706d56.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="lib/main.js"></script>
   </head>
+
   <body>
     <canvas id="space"></canvas>
     <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
@@ -26,25 +31,25 @@
         <a class="navbar-item" href="https://www.jamescrook.com">
           <img src="logo.png" width="32" height="auto">
         </a>
-    
+
         <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
         </a>
       </div>
-    
+
       <div id="navbarBasicExample" class="navbar-menu">
         <div class="navbar-start">
-    
+
           <a class="navbar-item" href="https://resume.io/r/6tZFYoiJt">
             <button id="resume" class="button is-primary is-outlined is-small modal-button has-icon-left" data-target="modal-resume" aria-haspopup="true">
               <i class="fas fa-file"></i> My Experience
             </button>
           </a>
-  
+
         </div>
-    
+
         <div class="navbar-end">
           <div class="navbar-item">
             <div class="buttons">
@@ -66,89 +71,90 @@
       </div>
     </nav>
     <div class="container">
-    <section class="hero is-medium is-transparent">
-      <div class="hero-body">
-        <div class="container">
-          <div class="columns">
-            <div class="column is-8-desktop is-offset-2-desktop">
-              <h1 class="title is-2 is-spaced">
-                James Crook <span> - Certified SAFe® Scrum Master</span>
-              </h1>
-              <h2 class="subtitle is-3">
-                    "Helping <strong>Teams</strong> of <strong>Teams</strong> successfully deliver."
+      <section class="hero is-medium is-transparent">
+        <div class="hero-body">
+          <div class="container">
+            <div class="columns">
+              <div class="column is-8-desktop is-offset-2-desktop">
+                <h1 class="title is-2 is-spaced">
+                  James Crook <span> - Certified SAFe® Scrum Master</span>
+                </h1>
+                <h3 class="subtitle is-3">
+                  "Guiding <strong>Teams</strong> of <strong>Teams</strong> successfully deliver."
                   <br />
                   <br />
                   <button id="hero" class="button is-primary is-large modal-button hello has-icon-left" data-target="modal" aria-haspopup="true"><i class="fa fa-envelope" aria-hidden="true"></i> Lets Chat
                   </button>
-                </h2>
+                </h3>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    
-    <div id="email" class="modal">
-      <div class="modal-background"></div>
-      <div class="modal-content">
-            <form method="POST" class="kwes-form" action="https://kwes.io/api/foreign/forms/4AVRRasB4JxUvQvw8q8S">
-              <div class="field">
-                <label class="label">Name</label>
-                <div class="control has-icons-left">
-                  <input class="input" type="text" name="Name" placeholder="Your name">
-                  <span class="icon is-small is-left">
+      </section>
+
+      <div id="email" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+          <form method="POST" class="kwes-form" action="https://kwes.io/api/foreign/forms/4AVRRasB4JxUvQvw8q8S">
+            <div class="field">
+              <label class="label">Name</label>
+              <div class="control has-icons-left">
+                <input class="input" type="text" name="Name" placeholder="Your name">
+                <span class="icon is-small is-left">
                     <i class="fa fa-user-circle-o" aria-hidden="true"></i>
                   </span>
-                </div>
               </div>
-              <div class="field">
-                <label class="label">Email</label>
-                <div class="control has-icons-left has-icons-right">
-                  <input class="input" type="email"  name="Email" placeholder="yourEmail@domain.com">
-                  <span class="icon is-small is-left">
+            </div>
+            <div class="field">
+              <label class="label">Email</label>
+              <div class="control has-icons-left has-icons-right">
+                <input class="input" type="email" name="Email" placeholder="yourEmail@domain.com">
+                <span class="icon is-small is-left">
                     <i class="fas fa-envelope"></i>
                   </span>
-                  <!-- <span class="icon is-small is-right">
+                <!-- <span class="icon is-small is-right">
                     <i class="fas fa-exclamation-triangle"></i>
                   </span> -->
-                </div>
-                <!-- <p class="help is-danger">This email is invalid</p> -->
               </div>
-              <div class="field">
-                <label class="label">Message</label>
-                <div class="control">
-                  <textarea class="textarea" name="Message"placeholder="Message Area"></textarea>
-                </div>
+              <!-- <p class="help is-danger">This email is invalid</p> -->
+            </div>
+            <div class="field">
+              <label class="label">Message</label>
+              <div class="control">
+                <textarea class="textarea" name="Message" placeholder="Message Area"></textarea>
               </div>
-              
-                <button type="submit" class="button is-primary">Submit</button>
-            </form>
+            </div>
+
+            <button type="submit" class="button is-primary">Submit</button>
+          </form>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
       </div>
-      <button class="modal-close is-large" aria-label="close"></button>
-    </div>
-    <footer class="footer has-text-centered">
-      <div class="container">
-         <div class="columns">
-          <div class="column is-8-desktop is-offset-2-desktop">
-            <p>
-              <strong class="has-text-weight-semibold">
+      <footer class="footer has-text-centered">
+        <div class="container">
+          <div class="columns">
+            <div class="column is-8-desktop is-offset-2-desktop">
+              <p>
+                <strong class="has-text-weight-semibold">
                 © James Crook 2022
               </strong>
-            </p>
-            <p>
-              <small>
-                Source code licensed <a href="http://opensource.org/licenses/mit-license.php">MIT</a>
-              </small>
-            </p>
-            <p style="margin-top: 1rem;">
-              <a href="http://bulma.io">
-                <img src="made-with-bulma.png" alt="Made with Bulma" width="128" height="24">
-              </a>
-            </p>
+              </p>
+              <p>
+                <small>
+                  Source code licensed <a href="http://opensource.org/licenses/mit-license.php">MIT</a>
+                </small>
+              </p>
+              <p style="margin-top: 1rem;">
+                <a href="http://bulma.io">
+                  <img src="made-with-bulma.png" alt="Made with Bulma" width="128" height="24">
+                </a>
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-    </footer>
-    </footer>
-    <script src="https://kwes.io/v2/kwes-script.js" charset="utf-8"></script>
+      </footer>
+      </footer>
+      <script src="https://kwes.io/v2/kwes-script.js" charset="utf-8"></script>
   </body>
+
 </html>
